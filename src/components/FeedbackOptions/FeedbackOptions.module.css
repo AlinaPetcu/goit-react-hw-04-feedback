@@ -1,0 +1,44 @@
+.container {
+    display: block;
+}
+
+.goodbtn,
+.neutralbtn,
+.badbtn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: solid 0.5px grey ; 
+    border-radius: 20%;
+    margin-left: 15px;
+}
+
+.goodbtn:hover {
+    cursor: pointer;
+    background-color: green;
+    scale: 1.1;
+}
+
+.neutralbtn:hover {
+    cursor: pointer;
+    background-color: rgb(201, 170, 70);
+    scale: 1.1;
+}
+
+.badbtn:hover {
+    cursor: pointer;
+    background-color: red;
+    scale: 1.1;
+}
+
+
+.btnContainer {
+    padding-left: 170px;
+}
+
+@media screen and (max-width: 650px) {
+    .btnContainer {
+        display: block;
+        padding: 0;
+    }
+}

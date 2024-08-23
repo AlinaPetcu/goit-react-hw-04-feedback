@@ -1,0 +1,15 @@
+.statistics {
+    list-style: none;
+}
+
+.good {
+    color: green;
+}
+
+.neutral {
+    color: rgb(201, 170, 70);
+}
+
+.bad {
+    color: red;
+}

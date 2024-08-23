@@ -1,3 +1,7 @@
+import React from 'react';
+import SectionTitle from './SectionTitle/SectionTitle';
+
+
 export const App = () => {
   return (
     <div
@@ -10,7 +14,8 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+       <SectionTitle />
     </div>
   );
 };
+export default App;
