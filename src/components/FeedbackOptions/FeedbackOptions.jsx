@@ -1,7 +1,7 @@
 import React from 'react';
-import css from './FeedbackOptions.module.css';
+import css from '../App.module.css';
 
-const FeedbackOptions = ({ handleFeedback }) => {
+const FeedbackOptions = ({ onGood, onNeutral, onBad }) => {
   return (
     <div className={css.container}>
       <h2>Please leave feedback</h2>
@@ -9,21 +9,21 @@ const FeedbackOptions = ({ handleFeedback }) => {
         <button
           className={css.goodbtn}
           type="button"
-          onClick={() => handleFeedback('good')}
+          onClick={onGood}
         >
           Good
         </button>
         <button
           className={css.neutralbtn}
           type="button"
-          onClick={() => handleFeedback('neutral')}
+          onClick={onNeutral}
         >
           Neutral
         </button>
         <button
           className={css.badbtn}
           type="button"
-          onClick={() => handleFeedback('bad')}
+          onClick={onBad}
         >
           Bad
         </button>

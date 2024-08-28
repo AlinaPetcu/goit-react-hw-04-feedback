@@ -1,20 +1,10 @@
 import React from 'react';
-import css from './Statistics.module.css';
+import css from '../App.module.css';
 
-const Statistics = ({ good, neutral, bad }) => {
-  const countTotalFeedback = () => {
-    return good + neutral + bad;
-  };
-
-  const countPositiveFeedbackPercentage = () => {
-    const total = good + neutral + bad;
-    return total > 0 ? ((good / total) * 100).toFixed(2) : 0;
-  };
-  const total = countTotalFeedback();
-  const positiveFeedback = countPositiveFeedbackPercentage();
-
+const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
   return (
     <div>
+      <h2>Statistics</h2>
       <ul className={css.statistics}>
         <li>
           <p className={css.good}>Good: {good}</p>
@@ -26,10 +16,10 @@ const Statistics = ({ good, neutral, bad }) => {
           <p className={css.bad}>Bad: {bad}</p>
         </li>
         <li>
-          <p>Total:{total}</p>
+          <p>Total: {total}</p>
         </li>
         <li>
-          <p className={css.good}>Positive feedback : {positiveFeedback}%</p>
+          <p className={css.good}>Positive feedback: {positiveFeedback}%</p>
         </li>
       </ul>
     </div>

@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.feedbackButton {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedbackButton:hover {
+    background-color: #45a049;
+}
+
+.statistics {
+    list-style: none;
+    padding: 0;
+}
+
+.statistics li {
+    margin: 10px 0;
+}
+
+.cont {
+    text-align: center;
+}
+
+.goodbtn,
+.neutralbtn,
+.badbtn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: solid 0.5px grey;
+    border-radius: 20%;
+    margin-left: 15px;
+}
+
+.goodbtn:hover {
+    cursor: pointer;
+    background-color: green;
+    scale: 1.1;
+}
+
+.neutralbtn:hover {
+    cursor: pointer;
+    background-color: rgb(201, 170, 70);
+    scale: 1.1;
+}
+
+.badbtn:hover {
+    cursor: pointer;
+    background-color: red;
+    scale: 1.1;
+}
+
+.good {
+    color: green;
+}
+
+.neutral {
+    color: rgb(201, 170, 70);
+}
+
+.bad {
+    color: red;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .btnContainer {
+        display: block;
+        padding: 0;
+    }
+}
